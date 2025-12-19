@@ -1,16 +1,38 @@
+# CoffeeTime Project
 
-## Установка и запуск
+## Как запустить проект
 
-### Бэкенд (Django)
-```bash
+### 1. Запустить Backend (Django)
+
+Откройте терминал и выполните:
+# 1. Зайдите в папку backend
 cd backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 2. Включите виртуальное окружение
+venv\Scripts\Activate 
+
+# 3. Установите зависимости (если requirements.txt есть)
 pip install -r requirements.txt
+
+# 4. Настройте базу данных
 python manage.py migrate
+
+# 5. Запустите сервер
 python manage.py runserver
 
-### Фронтенд (React)
+
+### 2. Запустить Frontend (React)
+
+# 1. Вернитесь в корневую папку (если вы в backend)
+cd ..
+
+# 2. Зайдите в папку frontend
 cd frontend
+
+# 3. Установите зависимости
 npm install
-npm start
+
+# 4. Запустите React
+npm run dev
+
+
